@@ -1,0 +1,21 @@
+{
+    "name": "qvalent/yii2-models-history",
+    "description": "Save model updates history to db",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","model","save","log","history"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "qvalent",
+            "email": "valentin531@yandex.ru"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "qvalent\\": ""
+        }
+    }
+}
