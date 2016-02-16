@@ -1,6 +1,6 @@
 Model updates history stored in DB
 ==================================
-Save model updates history to db
+Extension is automatically saves all ActiveRecords inserts, updates and deletes at table `{{%models_history}}`
 
 Installation
 ------------
@@ -21,11 +21,15 @@ or add
 
 to the require section of your `composer.json` file.
 
+Then apply migration:
+
+```
+php yii migrate --migrationPath="@vendor/qvalent/yii2-models-history/migrations"
+```
 
 Usage
 -----
 
-Once the extension is installed, simply use it in your code by  :
+No other steps required. Extension is working now, you can test it by update some project ActiveRecord and see updates in `{{%models_history}}`.
 
-```php
-<?= \qvalent\AutoloadExample::widget(); ?>```
+Feel free to create issues if something is wrong.
